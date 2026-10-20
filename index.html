@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Lê Hữu Hoạt – Frontend Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Lê Hữu Hoạt" />
+  <title>Lê Hữu Hoạt · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-name">Lê Hữu Hoạt</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là!</p>
+          <h1 class="hero-title">Lê Hữu Hoạt</h1>
+          <p class="hero-desc">
+            tôi yêu sắc xanh, yêu công nghệ và yêu lập trình.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="assets/img/avt.jpg"
+            alt="Ảnh đại diện của lê Hữu Hoạt"
+            width="480" height="480" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi có và thành thục</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">Tạo các sự kiện</li>
+          <li class="skill-chip">Quản lí đội ngũ</li>
+          <li class="skill-chip">Giao tiếp</li>
+ 
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Những thứ có liên quan tới công việc của tôi</h2>
+       
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/laptop.jpg"
+              alt="Ảnh minh họa dự án Landing Page" width="400" height="280" />
+            <div class="card-body">
+              <h3 class="card-title">Thiết bị tôi sử dụng</h3>
+              <p class="card-desc">
+                máy tính laptop
+              </p>
+              <a class="card-link" href="https://lapvip.com.vn/asus-zenbook-14-ux3405ca-2025-p4159?attr_id=3425&gad_source=4&gad_campaignid=24176577263&gbraid=0AAAABCRh2qAvkMlMMYk-LnELbA4MuEB0G&gclid=Cj0KCQjwuJLWBhD_ARIsAIBcRUyFFsYCWkM__mFOyLwpXFexUoPmWXzaRJYxeovPQWfn61w_bU_S1FgaAoBKEALw_wcB">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/grn.jpg"
+              alt="Garena" width="150" height="150" />
+            <div class="card-body">
+              <h3 class="card-title">Garena</h3>
+              <p class="card-desc">
+                đơn vị mà tôi đang hợp tác
+              </p>
+              <a class="card-link" href="https://www.garena.vn/">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/anh.jpg"
+              alt="Ảnh minh họa dự án" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">ảnh ví dụ minh họa về sự kiện</h3>
+              <p class="card-desc">
+                ảnh tập thể nhận giải sau khi xong sự kiện
+              </p>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/DwcMinh.jpg"
+              alt="Ảnh minh họa dự án Blog cá nhân" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Nguyễn Đức Minh (DwcMinh)</h3>
+              <p class="card-desc">
+                cộng tác viên của tôi
+              </p>
+              <a class="card-link" href="https://www.facebook.com/duccmingg305208">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a href="#">lhhoat2008@gmail.com</a></li>
+          <li><span class="contact-label">facebook</span> <a href="https://www.facebook.com/lhhoat">Hữu Hoạt</a></li>
+          <li><span class="contact-label">Số điện thoại</span> <a href="#">0915644394</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Lê Hữu Hoạt &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
